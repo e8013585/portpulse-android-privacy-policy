@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PortPulse Privacy Policy</title>
+<style>
+  :root { --fg: #1b1f1d; --muted: #47504c; --bg: #f7f9f8; --accent: #0b7a5f; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f3f5f2; --muted: #b8beba; --bg: #050505; --accent: #34f5c5; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { color: var(--accent); margin-bottom: 4px; }
+  h2 { margin-top: 32px; font-size: 1.15rem; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>PortPulse Privacy Policy</h1>
+<p class="muted">Effective October 31, 2026 · Developer: Unpossible Apps</p>
+
+<p>PortPulse is a local network scanner. It finds the devices on the Wi-Fi or Ethernet network your phone is connected to, checks which ports they have open, and measures latency. It has no account, no cloud service and no servers of its own. This policy explains what the app does and doesn't do with information.</p>
+
+<h2>Scans run on your device, and the results stay there</h2>
+<p>Everything PortPulse finds stays in the app on your device and is never sent to us or anyone else. That includes device addresses, names, makers and models, open ports, latency figures and security notes. We don't operate any servers for PortPulse, so we never receive any of it.</p>
+
+<h2>What the app sends on your local network</h2>
+<p>To find and identify devices, PortPulse sends ordinary network traffic to the devices on the network you're connected to, and only when you start a scan, a port check or a latency test:</p>
+<ul>
+  <li><strong>Connection attempts and pings.</strong> Brief TCP connection attempts to common ports, which are closed at once without sending data, and ICMP pings.</li>
+  <li><strong>Discovery requests.</strong> Standard UPnP (SSDP) and Bonjour (mDNS) discovery messages. PortPulse may also read the short description file a UPnP device publishes about itself, but only from a private address on your local network.</li>
+  <li><strong>Name lookups.</strong> Reverse DNS lookups of local addresses, sent to the DNS server your network assigns, which is usually your router.</li>
+</ul>
+<p>Only scan networks you own or have permission to test.</p>
+
+<h2>The optional internet latency test</h2>
+<p>The Pulse screen has an optional "Test internet latency" button. Only when you tap it does PortPulse time connection handshakes to 1.1.1.1, a public DNS service run by Cloudflare. No data is sent in those connections. As with any internet connection, Cloudflare can see your network's public IP address; <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a> applies to that traffic. Every other diagnostic stays on your local network.</p>
+
+<h2>What is stored on your device</h2>
+<ul>
+  <li><strong>Remembered devices.</strong> To flag devices that weren't there at your last scan, PortPulse keeps a short list of identifiers (device names, MAC addresses where Android provides them, or the address for unnamed devices) for each network you scan. You can clear it at any time in Settings &gt; Forget remembered devices.</li>
+  <li><strong>Your Pro status.</strong> An encrypted record of your Pro purchase is kept so Pro works offline.</li>
+</ul>
+<p>The app doesn't read your Wi-Fi network's name (SSID) or your location.</p>
+
+<h2>Reports you share</h2>
+<p>With PortPulse Pro you can share a scan report as text or CSV. PortPulse hands the report to the app you choose, for example email, notes or a messaging app, and that app's own privacy policy then applies. PortPulse itself never uploads reports anywhere.</p>
+
+<h2>Information processed by Google services in the app</h2>
+<ul>
+  <li><strong>Google Play Billing</strong> processes purchases of PortPulse Pro (subscription or lifetime). Payments are handled entirely by Google Play; we never receive your payment details. The app checks with Google Play on your device to confirm whether you own Pro.</li>
+  <li><strong>Advertising.</strong> Version 1.0 shows no ads, and the advertising SDK included in the app is never started. A future version may show ads to free users through Google AdMob. If it does, this policy will be updated before that version is released, you'll be asked for consent where the law requires it, and PortPulse Pro will remain ad-free.</li>
+</ul>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>Network access, network and Wi-Fi state.</strong> Used to scan your local network, to show your connection details (IP address, gateway, signal strength, link speed and band), and by Google Play Billing.</li>
+  <li><strong>Wi-Fi multicast.</strong> Briefly enabled during a scan so the app can receive UPnP and Bonjour replies.</li>
+  <li><strong>Local network access</strong> (Android 17 and later). Android asks for your permission before PortPulse can reach devices on your network.</li>
+  <li>PortPulse doesn't request access to your location, contacts, camera, microphone, photos or files.</li>
+</ul>
+
+<h2>Things we don't do</h2>
+<ul>
+  <li>No account or sign-in, and no analytics, crash reporting or tracking added by us.</li>
+  <li>We don't collect, sell, rent or share information about you, your network or your devices.</li>
+  <li>The app never scans or contacts anything on the internet except the optional latency test described above and Google Play.</li>
+</ul>
+
+<h2>Backups and deleting your data</h2>
+<p>Android's automatic cloud backup and device-to-device transfer are turned off for PortPulse, so nothing is copied to a cloud account. Scan results are cleared when you start a new scan or close the app, and you can clear remembered devices in Settings. Uninstalling the app permanently removes all of its data from your device. To end a PortPulse Pro subscription, cancel it in Google Play under Payments &amp; subscriptions.</p>
+
+<h2>Children</h2>
+<p>PortPulse is a network tool and isn't directed at children under 13. We don't knowingly collect personal information from children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be posted at this address with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy: <a href="mailto:hasan.bayramoglu.developer@gmail.com">hasan.bayramoglu.developer@gmail.com</a></p>
+</main>
+</body>
+</html>
